@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Subdomain Takeover Example</title>
+<style>
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+
+  .preview-mode .highlight { 
+    border-bottom: 2px solid yellow; /* Example line style */
+  }
+</style>
+</head>
+<body>
+
+<p>This is a regular paragraph.</p>
+
+<p><span class="highlight">hii this is testing for subdomain takeover...</span> by @stish834</p>
+
+<button id="previewButton">Toggle Preview</button>
+
+<script>
+  const previewButton = document.getElementById('previewButton');
+
+  previewButton.addEventListener('click', () => {
+    document.body.classList.toggle('preview-mode');
+  });
+</script>
+
+</body>
+</html>
